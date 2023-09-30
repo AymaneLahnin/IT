@@ -1,0 +1,46 @@
+body{
+    
+    background-color: rgba(44, 156, 221, 0.205);
+}
+h1{
+    font-size: 10vw;
+    margin: center;
+    
+    background-image: url("bgLOGO.jpeg");
+    
+    background-clip: text;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.fade-in {
+    opacity: 0; /* Set initial opacity to 0 for the fade effect */
+    animation: fadeIn 5s forwards; /* Animation with 1.5 seconds duration */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
